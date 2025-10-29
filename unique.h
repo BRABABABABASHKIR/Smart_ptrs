@@ -62,8 +62,6 @@ template <typename T, typename Deleter = DefaultDeleter<T>>
 class UniquePtr {
 public:
     using ComPair = CompressedPair<T*, Deleter>;
-    ////////////////////////////////////////////////////////////////////////////////////////////////
-    // Constructors
 
     explicit UniquePtr(T* ptr = nullptr) : holder_(ComPair(ptr, Deleter())) {
     }
