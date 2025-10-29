@@ -7,7 +7,6 @@
 
 class ESFTBase {};
 
-// Look for usage examples in tests
 template <typename T>
 class EnableSharedFromThis : public ESFTBase {
 public:
